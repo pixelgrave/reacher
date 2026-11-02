@@ -6,6 +6,8 @@ Reacher is a tiny Windows tray app. When a script, a CI job, or an AI agent need
 
 It was built so Claude Code can say *"I'm done"* or *"I'm blocked, which option?"* without you babysitting the terminal, but anything that can make an HTTP request can use it.
 
+<p align="center"><img src="docs/bubble.png" alt="A Reacher bubble docked in the screen corner: source Claude · reacher, title Claude Code, message asking whether to merge, with Merge and I'll look buttons" width="390"></p>
+
 ![Windows](https://img.shields.io/badge/platform-Windows-blue) ![.NET 10](https://img.shields.io/badge/.NET-10-purple) ![MIT](https://img.shields.io/badge/license-MIT-green)
 
 ## What it does
