@@ -35,6 +35,11 @@ catch (ArgumentException ex)
     Console.Error.WriteLine("Run 'reach help' for usage.");
     return 1;
 }
+catch (Exception ex) when (ex is HttpRequestException or OperationCanceledException)
+{
+    Console.Error.WriteLine($"reach: Reacher isn't running on 127.0.0.1:{ReacherClient.Port} ({ex.Message}). Run 'reach start' to launch it.");
+    return 1;
+}
 
 static async Task<int> ReachCmd(string[] args)
 {
